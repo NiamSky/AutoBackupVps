@@ -8,3 +8,15 @@ chown root:root /usr/bin/rclone
 chmod 755 /usr/bin/rclone
 cd
 rclone config
+n
+
+//Your Backup Data Name, replace this 
+Backup
+//
+drive
+
+
+1
+
+
+n
