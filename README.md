@@ -1,5 +1,8 @@
 # Cara Menjalankan Script?
-##### 1. Unduh file [autobackup.sh](https://github.com/EdoGaming28/autobackup/archive/refs/heads/main.zip)
+##### 1. Unduh file [installerrclone.sh]
+```html
+curl -L -o installer.sh https://raw.githubusercontent.com/NiamSky/AutoBackupVps/main/installer.sh
+```
 ##### 2. Letakkan file autobackup.sh ke dalam VPS
 ##### 3. Buka file tersebut dan ganti "name" dengan nama pusat file backup Anda yang akan digunakan saat mentransfer file ke Google Drive
 ```java
