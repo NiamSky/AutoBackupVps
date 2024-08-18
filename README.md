@@ -1,6 +1,6 @@
 # Note 
 > Sebelum memulai anda harus mempunyai rclone terinstall terlebih dahulu di device yang di gunakan
-> Tutorial jika anda menggunakan [WINDOWS](https://youtu.be/dTFt2DkOde4?si=E17zRc4BslGIWn3V) hanya sampai bagian install saja
+> tutorial jika anda menggunakan [WINDOWS](https://youtu.be/dTFt2DkOde4?si=E17zRc4BslGIWn3V) hanya sampai bagian install saja
 
 # Cara Menjalankan Script?
 ##### 1. Unduh file installer.sh
