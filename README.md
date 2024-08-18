@@ -15,8 +15,8 @@ name
 ```
 ##### 3. Simpan perubahan dan jalankan script:
 ```html
-chmod +x ./autobackup.sh
-./autobackup.sh
+chmod +x ./installer.sh
+./installer.sh
 ```
 ##### 4. Jika script berhasil dijalankan, akan muncul sebuah tautan yang meminta Anda untuk menghubungkan akun yang akan digunakan untuk backup file.
 ##### 5. Salin kode di Chrome Anda dan tempel ke VPS
