@@ -1,38 +1,17 @@
-# This Is Script Auto Backup in VPS
-script created by me <br>
-full tutorial is on my youtube [YOUTUBE](https://youtu.be/m8JcTf3dd7Y)
-
-# How To Run The script?
-##### 1. Download the file [autobackup.sh](https://github.com/EdoGaming28/autobackup/archive/refs/heads/main.zip)
-##### 2. Put the autobackup.sh file into the vps
-##### 3. Open the file and replace the "name" to the name of your backup file center that will be used when transferring files to Google Drive
-```java
-//Your Backup Data Name, replace this 
-name
-//
-```
-##### 4. Save Changed and Run the script:
-```html
-chmod +x ./autobackup.sh
-./autobackup.sh
-```
-##### 5. then if the script is running successfully, a link will appear that will ask you to connect the account that will be used to backup files.
-##### 6. copy the code in your chrome and paste to vps
-
-# How to set the AUTOMATICALLY / Auto Backup
-1. Create the file backup.sh
-2. Then copy this script and paste in file backup.sh
+# Cara Mengatur Backup Otomatis
+1. Buat file backup.sh
+2. Kemudian salin script ini dan tempel di file backup.sh
 ```html
 date=$(date +%d-%m-%y)
 zip -r namafile-$date.zip /root/directory/
 rclone copy namafile-$date.zip name:
 rm namafile-$date.zip
 ```
-> change the "namefile" to the name of the file to be backed up and which will appear on google drive <br>
-> change the /root/directory/ to the folder location that will be automatically zipped <br>
-> change the "name" to the name you entered in the third step (step ketiga)
-### WARNING!!! Don't replace what I didn't tell you to change
-3. Save the file and run the script:
+> Ganti "namafile" dengan nama file yang akan dibackup dan yang akan muncul di Google Drive <br>
+> Ganti /root/directory/ dengan lokasi folder yang akan secara otomatis di-zip <br>
+> Ganti "name" dengan nama yang Anda masukkan pada langkah ketiga (step ketiga)
+### PERINGATAN!!! Jangan ganti apa yang tidak saya minta untuk diganti
+3. Simpan file dan jalankan script:
 ```html
 chmod +x ./backup.sh
 ```
@@ -43,46 +22,46 @@ crontab -e
 ```html
 1
 ```
-> then paste this script outside # or at the bottom
+> Kemudian tempelkan script ini di luar # atau di bagian bawah
 ```html
 * 7 * * * bash /root/backup.sh
 ```
 ![gambar](https://gosigitgo.files.wordpress.com/2010/03/crontab-syntax.gif?w=510)
 
-> * 7 * * * Means that the script will automatically run every 7 am, or the file will be transferred to Google Drive every 7 am
-4. And save the file
-> if you use the editor from vps then run CTRL+X then Y, to save the changes
+> * 7 * * * Berarti script akan dijalankan secara otomatis setiap jam 7 pagi, atau file akan ditransfer ke Google Drive setiap jam 7 pagi
+4. Dan simpan file tersebut
+> Jika Anda menggunakan editor dari VPS, tekan CTRL+X lalu Y untuk menyimpan perubahan
 
-# Command Manual RCLONE
-### Create A Folder
+# Perintah Manual RCLONE
+### Buat Folder
 ```html
 rclone mkdir name:/namaFolder
 ```
-> replace "name" to your backup file center name in step 3
+> Ganti "name" dengan nama pusat file backup Anda pada langkah 3
 
-### Copy File To Google Drive
+### Salin File ke Google Drive
 ```html
 rclone copy namafile.zip name:
 ```
-> replace "name" to your backup file center name in step 3 <br>
-> change the "namafile" to the name of the file you want to copy into google drive
+> Ganti "name" dengan nama pusat file backup Anda pada langkah 3 <br>
+> Ganti "namafile" dengan nama file yang ingin Anda salin ke Google Drive
 
-### Download files from Google Drive to your vps
+### Unduh file dari Google Drive ke VPS Anda
 ```html
 rclone copy name:/namafile.zip /root/
 ```
-> replace "name" to your backup file center name in step 3 <br>
-> change the "namafile" to the name of the file you want to copy into google drive <br>
-> change the "root" to where the file you want to put the download
+> Ganti "name" dengan nama pusat file backup Anda pada langkah 3 <br>
+> Ganti "namafile" dengan nama file yang ingin Anda salin ke Google Drive <br>
+> Ganti "root" dengan tempat Anda ingin meletakkan file unduhan
 
-### Check the files in Google Drive
+### Periksa file di Google Drive
 ```html
 rclone ls name:
 ```
-> replace "name" to your backup file center name in step 3
+> Ganti "name" dengan nama pusat file backup Anda pada langkah 3
 
 # Manual:
->if the method above doesn't work or error, use a manual script.
+> Jika metode di atas tidak berhasil atau error, gunakan script manual.
 ```html
 apt update && apt upgrade
 ```
@@ -116,7 +95,7 @@ n
 ```html
 enter.
 ```
-#### replace "name" to your backup file center name.
+#### Ganti "name" dengan nama pusat file backup Anda.
 ```html
 name
 ```
@@ -141,5 +120,5 @@ enter.
 ```html
 n
 ```
-- then if the script is running successfully, a link will appear that will ask you to connect the account that will be used to backup files.
-- copy the code in your chrome and paste to vps
+- Kemudian jika script berhasil dijalankan, akan muncul sebuah tautan yang meminta Anda untuk menghubungkan akun yang akan digunakan untuk backup file.
+- Salin kode di Chrome Anda dan tempel ke VPS
