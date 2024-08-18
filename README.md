@@ -7,19 +7,20 @@
 ```html
 curl -O https://raw.githubusercontent.com/NiamSky/AutoBackupVps/main/installer.sh
 ```
-##### 2. Buka file tersebut dan ganti "name" dengan nama pusat file backup Anda yang akan digunakan saat mentransfer file ke Google Drive
-```java
-// Nama Data Backup Anda, ganti ini 
-name
-//
-```
-##### 3. Simpan perubahan dan jalankan script:
+##### 2. Jalankan script:
 ```html
 chmod +x ./installer.sh
 ./installer.sh
 ```
-##### 4. Jika script berhasil dijalankan, akan muncul sebuah tautan yang meminta Anda untuk menghubungkan akun yang akan digunakan untuk backup file.
-##### 5. Salin kode di Chrome Anda dan tempel ke VPS
+##### 3. New Remote
+##### 4. Beri nama remote
+##### 5. Jika disuruh mengetik maka enter dan jika disuruh untuk memilih maka pilih no/n
+##### 6. Kemudian akan muncul sebuah kode seperti
+```html
+rclone authorize "drive" "eyJzY29wZSI6Ixxxxxxxx"
+```
+##### 7. Salinlah ke device yang anda gunakan dan telah terinstall rclone
+##### 8. Salinlah kode yang muncul di cmd (jika anda memakai windows) tempel di vps anda
 
 # Cara Mengatur Backup Otomatis
 1. Buat file backup.sh
