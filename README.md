@@ -3,20 +3,19 @@
 ```html
 curl -O https://raw.githubusercontent.com/NiamSky/AutoBackupVps/main/installer.sh
 ```
-##### 2. Letakkan file autobackup.sh ke dalam VPS
-##### 3. Buka file tersebut dan ganti "name" dengan nama pusat file backup Anda yang akan digunakan saat mentransfer file ke Google Drive
+##### 2. Buka file tersebut dan ganti "name" dengan nama pusat file backup Anda yang akan digunakan saat mentransfer file ke Google Drive
 ```java
 // Nama Data Backup Anda, ganti ini 
 name
 //
 ```
-##### 4. Simpan perubahan dan jalankan script:
+##### 3. Simpan perubahan dan jalankan script:
 ```html
 chmod +x ./autobackup.sh
 ./autobackup.sh
 ```
-##### 5. Jika script berhasil dijalankan, akan muncul sebuah tautan yang meminta Anda untuk menghubungkan akun yang akan digunakan untuk backup file.
-##### 6. Salin kode di Chrome Anda dan tempel ke VPS
+##### 4. Jika script berhasil dijalankan, akan muncul sebuah tautan yang meminta Anda untuk menghubungkan akun yang akan digunakan untuk backup file.
+##### 5. Salin kode di Chrome Anda dan tempel ke VPS
 
 # Cara Mengatur Backup Otomatis
 1. Buat file backup.sh
