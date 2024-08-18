@@ -11,7 +11,7 @@ rclone config
 n
 
 //Your Backup Data Name, replace this 
-Backup
+name
 //
 drive
 
